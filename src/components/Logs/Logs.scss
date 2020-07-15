@@ -1,0 +1,18 @@
+@import "../../styles/abstracts/variables";
+
+#logs {
+  margin: 2rem 3rem 3rem 3rem;
+
+  @media (min-width: $display-mobile) {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @media (min-width: $display-laptop-desktop) {
+    width: 75%;
+  }
+
+  & > div {
+    margin-bottom: $margin-separator;
+  }
+}

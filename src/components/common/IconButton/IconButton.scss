@@ -1,0 +1,32 @@
+@import "../../../styles/abstracts/variables";
+
+@keyframes fadeIn {
+  0% {
+    background-color: $color-white;
+  }
+  100% {
+    background-color: $color-grey-lightest;
+  }
+}
+
+$icon-size: 2rem;
+
+.icon-button {
+  width: $icon-size;
+  height: $icon-size;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--disabled {
+    opacity: $diabled-opacity;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:hover {
+    background-color: $color-grey-lightest;
+    animation: fadeIn ease 0.5s;
+  }
+}

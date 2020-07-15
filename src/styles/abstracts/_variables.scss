@@ -1,0 +1,13 @@
+$color-white: #ffffff;
+$color-grey: #707070;
+
+$color-grey-lightest: lighten($color-grey, 50%);
+$color-grey-lighter: lighten($color-grey, 20%);
+$color-grey-darker: darken($color-grey, 20%);
+
+$margin-separator: 1rem;
+
+$diabled-opacity: 0.35;
+
+$display-mobile: 641px;
+$display-laptop-desktop: 1281px;

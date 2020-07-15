@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationInfo should match snapshot 1`] = `
+<div
+  className="pagination-info"
+  data-testid="pagination-info"
+>
+  Show 2 to 26
+      of 9999999 (0.00%)
+</div>
+`;
