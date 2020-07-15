@@ -15,8 +15,12 @@
 /coverage
 /coverage/**/*
 
+# testing
+/.vscode
+/.vscode/**/*
+
 # production
-/app/build
+/build
 
 # misc
 /app/.DS_Store
