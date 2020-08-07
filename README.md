@@ -93,3 +93,27 @@ Jest has some useful settings for quality gates and minimum coverage requirement
 
 - Progress Bar: this could be used to give the user a richer visual idea of the current pagination position.
 - Notification spread or snackbar: this could be used to provide user feedback in the event of slower load times or problems connecting to the API endpoint.
+
+
+
+
+          {/* <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Word of the Day
+              <FontAwesomeIcon size="10x" icon={["fas", "coffee"]} />
+            <FontAwesomeIcon icon={faCoffee} />
+          </Typography>
+          <Typography variant="h5" component="h2">
+            be{bull}nev{bull}o{bull}lent
+            </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            adjective
+            </Typography>
+          <Typography variant="body2" component="p">
+            well meaning and kindly.
+              <br />
+            {'"a benevolent smile"'}
+          </Typography> */}

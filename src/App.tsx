@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Logs } from "./components/Logs";
+import { Invoices } from "./components/Logs";
 
 function App() {
   return (
     <div data-testid="app">
-      <Logs />
+      <Invoices />
     </div>
   );
 }
