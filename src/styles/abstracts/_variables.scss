@@ -11,3 +11,8 @@ $diabled-opacity: 0.35;
 
 $display-mobile: 641px;
 $display-laptop-desktop: 1281px;
+
+:export {
+  colorWhite: $color-white;
+  colorGrey: $color-grey;
+}
