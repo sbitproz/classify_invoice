@@ -10,7 +10,6 @@ export interface Invoice {
   data_error: string;
 }
 
-
 export interface InvoiceResponse {
   suspect: Invoice[];
   error: Invoice[];

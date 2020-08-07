@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Invoices } from "./components/Logs";
+import { Invoices } from "./components/Invoices";
 
 function App() {
   return (

@@ -2,9 +2,9 @@
 import React, { useEffect, useCallback, useState } from "react";
 
 // Own
-import { InvoiceTable } from './components/InvoiceTable'
+import { InvoiceTable } from "./components/InvoiceTable";
 import { invoicesService } from "./services/invoicesService";
-import InvoiceStats from './components/LogStats/LogStats';
+import InvoiceStats from "./components/LogStats/LogStats";
 import { Invoice } from "./interfaces/invoicesStateInterfaces";
 import { invoiceType } from "./constants/invoicesConstants";
 
@@ -34,12 +34,14 @@ const Logs: React.SFC = () => {
 
   const handleUpdateInvoiceCallback = useCallback(
     (invoiceId, errorState) => {
-      invoicesService.updateInvoice(invoiceId, errorState).subscribe(response => {
-        fetchInvoices();
-      })
+      invoicesService
+        .updateInvoice(invoiceId, errorState)
+        .subscribe((response) => {
+          fetchInvoices();
+        });
     },
     [fetchInvoices]
-  )
+  );
 
   const getInvoices = () => {
     switch (view) {
@@ -50,12 +52,12 @@ const Logs: React.SFC = () => {
       default:
         return suspectInvoices;
     }
-  }
+  };
 
   const handleStatsClick = (type: string) => {
     console.log(type);
     setView(type);
-  }
+  };
 
   return (
     <div id="invoices">
@@ -63,16 +65,16 @@ const Logs: React.SFC = () => {
         stats={{
           suspect: suspectInvoices.length,
           correct: correctInvoices.length,
-          error: errorInvoices.length
+          error: errorInvoices.length,
         }}
         onClick={handleStatsClick}
       />
-      {view === invoiceType.suspect &&
+      {view === invoiceType.suspect && (
         <InvoiceTable
           invoices={getInvoices()}
           onUpdateInvoice={handleUpdateInvoiceCallback}
         />
-      }
+      )}
     </div>
   );
 };
