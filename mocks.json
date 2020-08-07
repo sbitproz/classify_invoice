@@ -1,19 +1,32 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+  "logs": [
+      {
+          "id": 1,
+          "date": "2019-11-02 08:42:17",
+          "type": "INFO",
+          "title": "1 This is the best support request"
+      },
+      {
+          "id": 2,
+          "date": "2019-11-02 08:42:17",
+          "type": "WARN",
+          "title": "2 This is the best support request"
+      },
+      {
+          "id": 3,
+          "date": "2019-11-02 08:42:17",
+          "type": "ERROR",
+          "title": "3 This is the best support request"
+      }
   ],
   "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+      {
+          "id": 1,
+          "body": "some comment",
+          "postId": 1
+      }
   ],
   "profile": {
-    "name": "typicode"
+      "name": "typicode"
   }
 }

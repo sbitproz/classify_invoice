@@ -54,13 +54,22 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": ["**/*.[jt]s?(x)"],
+        "rules": {
+          "no-negated-in-lhs": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
