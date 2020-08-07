@@ -7,13 +7,13 @@
     "name": "Daniel Clovis"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "start:server": "json-server  --port 3004 --watch ./mocks.json",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --runInBand --watchAll=false",
     "test:hide": "react-scripts test --watchAll=false",
-    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "test:debug": "react-app-rewired test --env=jsdom --inspect-brk test --runInBand --no-cache",
     "pretty": "prettier --write --tab-width 2 \"src/**/*.{js,jsx,ts,tsx}\"",
     "eject": "react-scripts eject"
   },
@@ -48,13 +48,16 @@
     "typescript": "~3.7.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^24.0.0",
+    "add": "^2.0.6",
     "concurrently": "^5.2.0",
+    "customize-cra": "^1.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
@@ -62,7 +65,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.6"
   },
   "eslintConfig": {
     "extends": "react-app",
